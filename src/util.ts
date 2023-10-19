@@ -163,7 +163,7 @@ export async function walkAsync (dirPath: string): Promise<string[]> {
     }
     return res;
   }
-  
+
   const allPaths = await _walkAsync(dirPath);
   return compactFlattenedList(allPaths);
 }
